@@ -55,6 +55,9 @@ nav a:hover{
 .navContainer a:first-of-type{
     background:#2dd4a7da;
 }
+.aHome{
+    background:#4BD9B3;
+}
 .aHere{
     background:#ffe1aa;
 }
