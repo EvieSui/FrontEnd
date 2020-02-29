@@ -96,9 +96,6 @@ pre{
 section{
     border-top:1px solid #e0e0e0;
 }
-.home,.mark{
-    background:#2dd4a7da;
-}
 table{
     border-collapse:collapse;
 }
@@ -116,6 +113,10 @@ th,td{
 }
 label,#navBut{
     display:none;
+}
+mark{
+    background:#4BD9B3;
+    color:#282C34;
 }
 @media(max-width:1150px){
     nav{
