@@ -93,7 +93,7 @@ pre{
 section{
     border-top:1px solid #e0e0e0;
 }
-.home{
+.home,.mark{
     background:#2dd4a7da;
 }
 table{
