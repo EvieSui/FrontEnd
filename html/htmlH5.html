@@ -37,9 +37,6 @@
         .notRColor{
             color:#B53471;
         }
-        mark{
-            background:#2dd4a7da;
-        }
         @media(max-width:800px){
             .mediaType table{
                 display:block;
@@ -132,12 +129,12 @@
             <br>
             <br>
             <h2>&lt;audio&gt; 在网页中嵌入音频</h2>
-            <p>&lt;<mark class="mark">audio</mark> src="" controls loop&gt;</p>
+            <p>&lt;<span class="mark">audio</span> src="" controls loop&gt;</p>
             <p>controls属性添加控件，例如播放，暂停和音量</p>
             <p>loop属性表示循环播放</p>
             <audio src="../audio/thisIsAPuppy.mp3" controls loop></audio>
             <h2>&lt;video&gt; 在网页中嵌入视频</h2>
-            <p>&lt;<mark class="mark>video</mark> src="" controls loop&gt;</p>
+            <p>&lt;<span class="mark">video</span> src="" controls loop&gt;</p>
             <p>应始终设置width height,否则加载视频时页面可能会闪烁</p>
             <p>标签之间的文本仅在不支持该元素的浏览器中显示</p>
             <video src="../video/thisIsAKitten.mp4" controls loop></video>
@@ -299,7 +296,7 @@
             <p>默认display:block;</p>
             <br>
             <h2>&lt;figure&gt; 定义独立于上下文的单元</h2>
-            <p>&lt;<mark class="mark>figure</mark>&gt;&lt;<mark class="mark>figcaption</mark>&gt;&lt;/figcaption&gt;&lt;/figure&gt;</p>
+            <p>&lt;<span class="mark">figure</span>&gt;&lt;<span class="mark">figcaption</span>&gt;&lt;/figcaption&gt;&lt;/figure&gt;</p>
             <p>&lt;figure&gt;可以包含图片，视频，音频，代码块，广告</p>
             <p>&lt;figcaption&gt;用于说明&lt;figure&gt;，需为&lt;figure&gt;的第一个或最后一个子元素</p>
             <p>figure默认display:block; margin:1em 40px 1em 40px;</p>
@@ -314,7 +311,7 @@
             <p>datetime属性在该元素中未指定日期或时间时，用于规定日期或时间</p>
             <br>
             <h2>&lt;details&gt; 点击显示或隐藏</h2>
-            <p>&lt;<mark class="mark>details</mark> open&gt;&lt;<mark class="mark>summary</mark>&gt;可见标题&lt;/summary&gt;&lt;p&gt;隐藏内容&lt;/p&gt;&lt;/details&gt;</p>
+            <p>&lt;<span class="mark">details</span> open&gt;&lt;<span class="mark">summary</span>&gt;可见标题&lt;/summary&gt;&lt;p&gt;隐藏内容&lt;/p&gt;&lt;/details&gt;</p>
             <p>&lt;details&gt;用于创建一个交互式小部件，用户可以按需查看或隐藏的其他详细信息</p>
             <p>&lt;summary&gt;定义可见标题</p>
             <p>open属性默认隐藏信息对用户可见</p>
