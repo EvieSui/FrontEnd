@@ -6,12 +6,6 @@
     <title>H5</title>
     <link rel="stylesheet" href="../css/article.css">
     <style>
-        mark{
-            background:red;
-        }
-        .mark{
-            background:#4BD9B3;
-        }
         audio,video{
             width:36rem;
             margin:1rem 0 3.6rem;
@@ -135,7 +129,7 @@
             <br>
             <br>
             <h2>&lt;audio&gt; 在网页中嵌入音频</h2>
-            <p>&lt;<mark>audio</mark> src="" controls loop&gt;</p>
+            <p>&lt;<span class="mark">audio</span> src="" controls loop&gt;</p>
             <p>controls属性添加控件，例如播放，暂停和音量</p>
             <p>loop属性表示循环播放</p>
             <audio src="../audio/thisIsAPuppy.mp3" controls loop></audio>
@@ -308,6 +302,8 @@
             <p>figure默认display:block; margin:1em 40px 1em 40px;</p>
             <br>
             <h2>&lt;mark&gt; 定义突出显示的标记文本</h2>
+            <p>移动端设置样式无效</p>
+            <br>
             <p>默认background:yellow; color:black;</p>
             <br>
             <h2>&lt;time&gt; 定义日期和24小时制时间</h2>
