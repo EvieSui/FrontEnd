@@ -93,9 +93,8 @@ pre{
 section{
     border-top:1px solid #e0e0e0;
 }
-mark{
+.home,.mark{
     background:#2dd4a7da;
-    color:#282C34;
 }
 table{
     border-collapse:collapse;
