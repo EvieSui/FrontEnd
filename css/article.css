@@ -55,7 +55,7 @@ nav a:hover{
 .navContainer a:first-of-type{
     background:#2dd4a7da;
 }
-.aHome{
+.navContainer a:first-of-type,.mark{
     background:#4BD9B3;
 }
 .aHere{
@@ -113,10 +113,6 @@ th,td{
 }
 label,#navBut{
     display:none;
-}
-mark{
-    background:#4BD9B3;
-    color:#282C34;
 }
 @media(max-width:1150px){
     nav{
