@@ -38,6 +38,7 @@ a{
     text-decoration:none;
     border-radius:0.2rem;
     display:inline-block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 nav a{
     width:13rem;
