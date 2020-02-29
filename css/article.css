@@ -46,13 +46,13 @@ nav a{
     line-height:3rem;
     background:#fff;
 }
-.navContainer a:not(:first-of-type){
-    margin-top:1rem;
-}
 nav a:hover{
     background:#ffe1aa;
 }
-nav a:first-of-type{
+.navContainer a:not(:first-of-type){
+    margin-top:1rem;
+}
+.navContainer a:first-of-type{
     background:#2dd4a7da;
 }
 .aHere{
