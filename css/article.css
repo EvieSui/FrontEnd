@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html{
+    font-size:10px;
+    color:#282C34;
+    font-family:"Verdana";
+}
+body{
+    font-size:1.5rem;
+    display:flex;
+    justify-content:center;
+}
+h2{
+    font-size:1.8rem;
+    line-height:2;
+}
+p{
+    line-height:1.5;
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    z-index:9;
+    background:#f9f9f9;
+    overflow:auto;
+}
+.navContainer{
+    margin:3rem;
+    display:flex;
+    flex-direction:column;
+}
+a{
+    color:#282C34;
+    text-decoration:none;
+    border-radius:0.2rem;
+    display:inline-block;
+}
+nav a{
+    width:13rem;
+    height:3rem;
+    text-align:center;
+    line-height:3rem;
+    background:#fff;
+}
+nav a:hover{
+    background:#ffe1aa;
+}
+.navContainer a:not(:first-of-type){
+    margin-top:1rem;
+}
+.navContainer a:first-of-type{
+    background:#4BD9B3;
+}
+.aHere{
+    background:#ffe1aa;
+}
+.nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1;
+    background:#fff;
+    box-shadow:4px 8px 5px 5px rgba(0,0,0,0.03);
+    text-align:center;
+    margin-left:19rem;
+}
+.nav a{
+    line-height:6rem;
+    padding:0 1.5rem;
+}
+.nav a:hover{
+    color:#4BD9B3;
+}
+main{
+    max-width:54rem;
+    margin-left:19rem;
+    margin-top:6rem;
+    padding:3rem;
+}
+.example{
+    background:#f9f9f9;
+    padding:1rem 0.5rem;
+}
+pre{
+    background:#fff;
+    font-family:"Verdana";
+}
+section{
+    border-top:1px solid #e0e0e0;
+}
+mark{
+    background:#4BD9B3;
+    color:#282C34;
+}
+table{
+    border-collapse:collapse;
+}
+tr{
+    border:1px solid #e0e0e0;
+}
+th,td{
+    padding:1.5rem;
+}
+.browser{
+    font-weight:bold;
+}
+.ie{
+    color:#0078D7;
+}
+label,#navBut{
+    display:none;
+}
+::selection{
+    background:#2dd4a7da;
+}
+@media(max-width:1150px){
+    nav{
+        right:0;
+        bottom:auto;
+        text-align:center;
+    }
+    .navContainer{
+        display:inline-block;
+        margin:1rem 0;
+    }
+    nav a{
+        width:auto;
+        height:4rem;
+        line-height:4rem;
+        padding:0 2rem;
+        margin:0.5rem;
+    }
+    .navContainer a:not(:first-of-type){
+        margin-top:0.5rem;
+    }
+    .nav{
+        margin:7rem 0 0 0;
+    }
+    main{
+        margin:13rem 0 0 0;
+    }
+}
+@media(max-width:800px){
+    nav{
+        display:none;
+    }
+    .navContainer{
+        margin:1rem 3rem;
+    }
+    label{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:10;
+        display:block;
+    }
+    svg{
+        width:24px;
+        height:24px;
+        fill:#5f6368;
+        padding:1.2rem;
+        margin:0.8rem 1.2rem;
+        cursor:pointer;
+    }
+    #navBut:checked+nav{
+        display:block;
+    }
+    .nav{
+        margin-top:0;
+    }
+    main{
+        margin-top:6rem;
+    }
+}
