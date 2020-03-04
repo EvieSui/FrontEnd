@@ -117,7 +117,7 @@ label,#navBut{
     display:none;
 }
 ::selection{
-    background:#2dd4a7da;
+    background:#ffe1aa;
 }
 @media(max-width:1150px){
     nav{
