@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/html.css">
+    <style>
+        .nav{
+            display:none;
+            height:6rem;
+        }
+        main{
+            margin-top:0;
+        }
+        .pre{
+            padding:0 3rem;
+            background:#f9f9f9;
+        }
+        .preContainer{
+            padding:2rem 0;
+            overflow:auto;
+        }
+        .annotation{
+            color:#B7B7B5;
+        }
+        .newH5{
+            background:#4BD9B3;
+            padding:0 0.4rem;
+            color:#fff;
+            font-size:1.1rem;
+            font-weight:bold;
+            text-align:center;
+            border-radius:0.2rem;
+        }
+        h2{
+            white-space:nowrap;
+            overflow:auto;
+        }
+        .markWord{
+            color:#4BD9B3;
+        }
+        @media(max-width:1150px){
+            main{
+                margin-top:7rem;
+            }
+        }
+        @media(max-width:800px){
+            .nav{
+                display:block;
+            }
+        }
+        @media(max-width:600px){
+            main{
+                max-width:100%;
+                padding:3rem 0;
+            }
+            h2,p{
+                margin:0 3rem;
+                /* word-wrap:break-word; */
+            }
+            .pre{
+                background:#fff;
+            }
+            .preContainer{
+                white-space:nowrap;
+                position:relative;
+                z-index:1;
+                padding:1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <label for="navBut">
+            <svg><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        </label>
+        <input id="navBut" type="checkbox">
+        <nav>
+            <div class="navContainer">
+                <a href="../index.html" target="_blank">Home</a>
+                <a href="htmlH5.html">H5</a>
+                <a href="htmlDisplay.html">Display</a>
+                <a href="htmlForm.html" class="aHere">Form</a>
+                <a href="htmlStructure.html">Structure</a>
+                <a href="htmlEntity.html">Entity</a>
+            </div>
+        </nav>
+        <div class="nav"></div>
+    </header>
+    <main>
+        <div class="pre">
+            <div class="preContainer">
+                &lt;form action="将提交表单到该服务器地址" id=""&gt;
+                <br>
+                <span class="annotation">|用于收集用户输入信息</span>
+                <br>
+                <span class="annotation">|</span>
+                <br>
+                <span class="annotation">|&emsp;</span>&lt;fieldset&gt;
+                <br>
+                <span class="annotation">|&emsp;|分组长表单的表单项</span>
+                <br>
+                <span class="annotation">|&emsp;|</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;</span>&lt;legend&gt;&lt;/legend&gt;
+                <br>
+                <span class="annotation">|&emsp;|&emsp;指定长表单内分组名</span>
+                <br>
+                <span class="annotation">|&emsp;|</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;</span>&lt;label for="表单项id值"&gt;&lt;/label&gt;
+                <br>
+                <span class="annotation">|&emsp;|&emsp;选中表单项指定其提示文字</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;点击该提示文字即选中该表单项</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;</span>&lt;<mark>input</mark> type="" list="datalist的id"&gt;
+                <br>
+                <span class="annotation">|&emsp;|&emsp;<span class="newH5">H5</span>list属性将表单元素与datalist绑定</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;当输入类型是网址value属性值必须添加</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;</span>&lt;datalist id=""&gt;<span class="newH5">H5</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|与表单元素绑定实现可输入下拉列表</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|&emsp;</span>&lt;option value="" label=""&gt;
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|&emsp;label属性指定辅助信息</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;</span>&lt;/datalist&gt;
+                <br>
+                <span class="annotation">|&emsp;|</span>
+                <br>
+                <span class="annotation">|&emsp;</span>&lt;/fieldset&gt;
+                <br>
+                <span class="annotation">|</span>
+                <br>
+                <span class="annotation">|&emsp;</span>&lt;button&gt;&lt;/button&gt;
+                <br>
+                <span class="annotation">|&emsp;除了input submit，也可以使用button创建提交表单按钮</span>
+                <br>
+                <span class="annotation">|</span>
+                <br>
+                <span class="annotation">|&emsp;</span>&lt;select name="" multiple="multiple"&gt;
+                <br>
+                <span class="annotation">|&emsp;|下拉列表</span>
+                <br>
+                <span class="annotation">|&emsp;|multiple属性设置为可多选的展开下拉列表</span>
+                <br>
+                <span class="annotation">|&emsp;|</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;</span>&lt;optgroup label="分组命名"&gt;
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|分组列表项</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|&emsp;</span>&lt;option value="" selected="selected"&gt;
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|&emsp;列表项</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|&emsp;selected属性指定默认选中的选项</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;|</span>
+                <br>
+                <span class="annotation">|&emsp;|&emsp;</span>&lt;/optgroup&gt;
+                <br>
+                <span class="annotation">|&emsp;|</span>
+                <br>
+                <span class="annotation">|&emsp;</span>&lt;/select&gt;
+                <br>
+                <span class="annotation">|&emsp;</span>
+                <br>
+                <span class="annotation">|</span>
+                <br>
+                <span class="annotation">|</span>
+                <br>
+                <span class="annotation">|&emsp;</span>&lt;textarea name=""&gt;&lt;/textarea&gt;
+                <br>
+                <span class="annotation">|&emsp;文本域</span>
+                <br>
+                <span class="annotation">|</span>
+                <br>
+                <span class="annotation">|&emsp;</span>&lt;keygen&gt;&lt;/keygen&gt;<span class="newH5">H5</span>
+                <br>
+                <span class="annotation">|&emsp;密钥生成，用于加密和验证</span>
+                <br>
+                <span class="annotation">|&emsp;</span><span class="browser ie">IE</span> <span class="not">Not supported</span>
+                <br>
+                <span class="annotation">|</span>
+                <br>
+                <span class="annotation">|&emsp;</span>&lt;output&gt;&lt;/output&gt;<span class="newH5">H5</span>
+                <br>
+                <span class="annotation">|&emsp;只能显示output标签内的信息不能修改</span>
+                <br>
+                <span class="annotation">|</span>
+                <br>
+                &lt;/form&gt;
+            </div>
+        </div>
+        <br>
+        <h2>&lt;input type="<span class="markWord">submit</span>" value=""&gt;</h2>
+        <p>提交按钮，用于提交表单</p>
+        <p>value属性指定按钮上的文字</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">reset</span>"&gt;</h2>
+        <p>重置按钮</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">button</span>" value=""&gt;</h2>
+        <p>按钮，通过JS绑定响应函数实现功能</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">text</span>" name="" value=""&gt;</h2>
+        <p>单行文本框，默认20个字符宽度</p>
+        <br>
+        <p>name属性指定内容描述名称</p>
+        <p><mark>该属性是提供数据发送到服务器的必要信息，提交后信息会写入url以查询字符串的形式发送</mark></p>
+        <p>查询字符串的格式:内容描述名称=文本框中的信息，提交多个信息以&链接</p>
+        <p>命名通常由后端决定</p>
+        <br>
+        <p>value属性指定文本框内的默认信息</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">password</span>" name=""&gt;</h2>
+        <p>密码框，默认字符被掩码</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">radio</span>" name="" value="" checked="checked"&gt;</h2>
+        <p>单选</p>
+        <p>name属性指定同组单选项需命名一致</p>
+        <br>
+        <p>value属性指定选择项各自的内容</p>
+        <p><mark>该属性是需要用户选择的表单项提供数据发送到服务器的必要信息</mark></p>
+        <br>
+        <p>checked="checked"指定默认选中的选项</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">checkbox</span>" name="" value="" checked="checked"&gt;</h2>
+        <p>复选框</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">file</span>" name="" multiple&gt;</h2>
+        <p>文件</p>
+        <p><span class="newH5">H5</span>multiple属性实现选择多个文件</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">search</span>" name="q" placeholder="" autocomplete="off" autofocus&gt;</h2>
+        <p><span class="newH5">H5</span>搜索，默认有清除内容功能，及搜索相似字符时显示提交历史</p>
+        <p><span class="newH5">H5</span>placeholder属性指定提示信息，无需删除即可键入</p>
+        <p><span class="newH5">H5</span>autocomplete属性获取历史提交信息选择后自动补全，可设置为on打开或off关闭</p>
+        <p><span class="newH5">H5</span>autofocus属性实现焦点状态为默认获取，打开和刷新页面后有效</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">email</span>" name="" multiple&gt;</h2>
+        <p><span class="newH5">H5</span>邮箱，当提交的邮件地址格式不规范，提示相应规则，并阻断提交</p>
+        <p><span class="newH5">H5</span>增加multiple属性后，使用逗号分隔可提交多个邮件地址</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">url</span>" name="""&gt;</h2>
+        <p><span class="newH5">H5</span>网址，网址必须包含http:</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">number</span>" name="quantity" max="" min="" value=""&gt;</h2>
+        <p><span class="newH5">H5</span>数量，只能输入数字和小数点</p>
+        <br>
+        <p>max属性限制可键入最大值</p>
+        <p>min属性限制可键入最小值</p>
+        <p>value属性设置默认值</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">range</span>" name="" max="" min="" value=""&gt;</h2>
+        <p><span class="newH5">H5</span>范围，滑块控件</p>
+        <p>默认值是中间值</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">color</span>" name="" value=""&gt;</h2>
+        <p><span class="newH5">H5</span>颜色选择器，默认值是#000</p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">time</span>" name=""&gt;</h2>
+        <p><span class="newH5">H5</span>时间控件</p>
+        <p><span class="browser safari">Safari</span> <span class="not">Not supported</span></p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">date</span>" name=""&gt;</h2>
+        <p><span class="newH5">H5</span>日期控件</p>
+        <p><span class="browser safari">Safari</span> <span class="not">Not supported</span></p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">datetime-local</span>" name=""&gt;</h2>
+        <p><span class="newH5">H5</span>日期和时间控件</p>
+        <p><span class="browser firefox">Firefox</span> <span class="not">Not supported</span></p>
+        <p><span class="browser safari">Safari</span> <span class="not">Not supported</span></p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">month</span>" name=""&gt;</h2>
+        <p><span class="newH5">H5</span>年月控件</p>
+        <p><span class="browser firefox">Firefox</span> <span class="not">Not supported</span></p>
+        <p><span class="browser safari">Safari</span> <span class="not">Not supported</span></p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">week</span>" name=""&gt;</h2>
+        <p><span class="newH5">H5</span>年星期控件</p>
+        <p><span class="browser firefox">Firefox</span> <span class="not">Not supported</span></p>
+        <p><span class="browser safari">Safari</span> <span class="not">Not supported</span></p>
+        <br>
+        <h2>&lt;input type="<span class="markWord">tel</span>" name="" pattern="" required&gt;</h2>
+        <p><span class="newH5">H5</span>电话，实现在移动端启动数字键盘</p>
+        <p><span class="newH5">H5</span>pattern属性指定用于验证的正则表达式</p>
+        <p><span class="newH5">H5</span>required属性表示必须输入，未输入或输入格式不规范则弹出提示并阻止数据提交</p>
+        <p><span class="browser chrome">Chrome</span> <span class="not">Not supported</span></p>
+        <p><span class="browser ie">IE</span> <span class="not">Not supported</span></p>
+        <p><span class="browser firefox">Firefox</span> <span class="not">Not supported</span></p>
+        <p><span class="browser opera">Opera</span> <span class="not">Not supported</span></p>
+        <br>
+        <h2>form="表单id"</h2>
+        <p><span class="newH5">H5</span> 该属性将表单外的表单元素与表单绑定，当表单提交时，当前被绑定的表单元素会一起提交</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/html.css">
+    <style>
+        .nav{
+            display:none;
+            height:6rem;
+        }
+        main{
+            margin-top:0;
+        }
+        section:first-of-type{
+            border:none;
+        }
+        .flexContainer{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-around;
+            background:#f9f9f9;
+            padding:2rem;
+            margin:2rem 0;
+        }
+        .flexContainer p{
+            width:8.5rem;
+            padding:0 2rem;
+            line-height:2;
+        }
+        @media(max-width:1150px){
+            main{
+                margin-top:7rem;
+            }
+        }
+        @media(max-width:800px){
+            .nav{
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <label for="navBut">
+            <svg><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        </label>
+        <input id="navBut" type="checkbox">
+        <nav>
+            <div class="navContainer">
+                <a href="../index.html" target="_blank">Home</a>
+                <a href="htmlH5.html">H5</a>
+                <a href="htmlDisplay.html" class="aHere">Display</a>
+                <a href="htmlForm.html">Form</a>
+                <a href="htmlStructure.html">Structure</a>
+                <a href="htmlEntity.html">Entity</a>
+            </div>
+        </nav>
+        <div class="nav"></div>
+    </header>
+    <main>
+        <section>
+            <h2>block</h2>
+            <p>独行</p>
+            <p>全宽</p>
+            <p>宽高可设</p>
+            <br>
+            <p>兄弟元素，相邻margin重叠，取最大值</p>
+            <div class="flexContainer">
+                <p>&lt;div&gt;</p>
+                <p>&lt;h1&gt;</p>
+                <p>&lt;p&gt;</p>
+                <p>&lt;table&gt;</p>
+                <p>&lt;ul&gt;</p>
+                <p>&lt;li&gt;</p>
+                <p>&lt;form&gt;</p>
+                <p>&lt;video&gt;</p>
+                <p>&lt;header&gt;</p>
+                <p>&lt;nav&gt;</p>
+                <p>&lt;main&gt;</p>
+                <p>&lt;section&gt;</p>
+                <p>&lt;article&gt;</p>
+                <p>&lt;aside&gt;</p>
+                <p>&lt;footer&gt;</p>
+                <p>&lt;figure&gt;</p>
+                <p>&lt;details&gt;</p>
+                <p class="placeholder"></p>
+                <p class="placeholder"></p>
+                <p class="placeholder"></p>
+            </div>
+            <br>
+            <br>
+        </section>
+        <section>
+            <br>
+            <br>
+            <h2>inline</h2>
+            <p>同行</p>
+            <p>内容宽</p>
+            <p>宽高不可设</p>
+            <br>
+            <p>清除产生的间隙,该元素{font-size:0;}</p>
+            <div class="flexContainer">
+                <p>&lt;a&gt;</p>
+                <p>&lt;span&gt;</p>
+                <p>&lt;button&gt;</p>
+                <p>&lt;time&gt;</p>
+                <p>&lt;br&gt;</p>
+                <p>&lt;script&gt;</p>
+                <p class="placeholder"></p>
+                <p class="placeholder"></p>
+            </div>
+            <br>
+            <br>
+        </section>
+        <section>
+            <br>
+            <br>
+            <h2>inline-block</h2>
+            <p>同行</p>
+            <p>内容宽</p>
+            <p>宽高可设</p>
+            <br>
+            <p>清除产生的间隙,父级元素{font-size:0;},该方法会使子元素&lt;br&gt;&lt;p&gt;不显示需为其单独设置font-size,但Chrome和Opera中为&lt;br&gt;设置font-size无效,该情况下需为inline-block元素创建父级容器</p>
+            <br>
+            <p>默认底部对齐,顶部对齐{vertical-align:top;}</p>
+            <div class="flexContainer">
+                <p>&lt;img&gt;</p>
+                <p>&lt;input&gt;</p>
+                <p class="placeholder"></p>
+                <p class="placeholder"></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
