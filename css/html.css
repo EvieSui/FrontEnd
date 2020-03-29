@@ -1,0 +1,59 @@
+@media(max-width:1150px){
+    nav{
+        right:0;
+        bottom:auto;
+        text-align:center;
+    }
+    .navContainer{
+        display:inline-block;
+        margin:1rem 0;
+    }
+    nav a{
+        width:auto;
+        height:4rem;
+        line-height:4rem;
+        padding:0 2rem;
+        margin:0.5rem;
+    }
+    .navContainer a:not(:first-of-type){
+        margin-top:0.5rem;
+    }
+    .nav{
+        margin:7rem 0 0 0;
+    }
+    main{
+        margin:13rem 0 0 0;
+    }
+}
+@media(max-width:800px){
+    nav{
+        display:none;
+    }
+    .navContainer{
+        margin:1rem 4.9rem 1rem 6.7rem;
+    }
+    label{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:10;
+        display:block;
+    }
+    svg{
+        width:24px;
+        height:24px;
+        fill:#5f6368;
+        padding:1.2rem;
+        margin:0.8rem 1.2rem;
+        cursor:pointer;
+    }
+    #navBut:checked+nav{
+        display:block;
+    }
+    .nav{
+        margin-top:0;
+    }
+    main{
+        margin-top:6rem;
+    }
+}
